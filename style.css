@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+  margin:0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* Barre de navigation */
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding: 0px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+}
+nav img{
+  margin-top: -20px;
+}
+nav .onglets{
+  display: flex;
+  flex-wrap:wrap;
+  margin-top: 27px;
+}
+nav .onglets p {
+  font-size: 23px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav .onglets p:hover {
+  color: #bb0202;
+}
+
+nav .onglets .link a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .onglets .link a:hover {
+  color: #bb0202;
+}
+nav .onglets input{
+  margin: 15px 20px;
+  padding: 15px;
+  border-radius: 30px;
+  border:none;
+  background-color: #f2f2f2;
+  outline:none;
+}
+/* Fin de la barre de navigation */
+
+/* Header */
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+header h1{
+  font-size: 50px;
+  max-width: 500px;
+  text-align:center;
+}
+header button{
+  padding: 15px 20px;
+  font-size: 20px;
+  border:none;
+  border-radius: 5px;
+  outline:none;
+  cursor:pointer;
+}
+/* Fin du header */
+
+/* Section principale */
+
+.main{
+  margin: 20px;
+  margin-top: 80px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  
+}
+.main-legende{
+  margin: 20px;
+  margin-top: 10px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.main-legende h1{
+  text-align: left;
+  font-size: 45px;
+  margin-top: -20px;
+}
+/* Toutes les cartes */
+.main-legende .cards .card .card-header h4{
+  text-align: center;
+}
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+}
+.cards .card{
+  margin-right: 20px;
+  cursor:pointer;
+}
+.cards .card img{
+  width: 350px;
+  height: 250px;
+}
+.cards .card .card-header{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.cards .card .card-body p{
+  margin-top: -10px;
+}
+/* Fin de toutes les cartes */
+/* Section Trophée */
+.trophee-section {
+  margin: 50px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.trophee-section h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.trophee-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trophee-card {
+  background-color: white;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trophee-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.trophee-card h4 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Comportement de la vidéo lors du scroll */
+.main .video {
+  position: relative;
+  z-index: -1;
+}
+
+
+/* Video de présentation */
+.main .video{
+  margin-top: 80px;
+  width: 90%;
+}
+.main .video iframe{
+  border:none;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+}
+/* Fin de la vidéo de présentation */
+/* Fin de la section principale */
+
+/* Pied de page */
+/* Pied de page */
+footer {
+  margin-top: 100px;
+  background-color: #0c1c2d;
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #bb0202; /* Ligne de démarcation rouge, inspirée du Barça */
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+footer .social-media p {
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+footer .social-media p:hover {
+  color: #bb0202; /* Changement de couleur au hover */
+}
+
+footer .barca-devise {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 18px;
+  color: #bb0202; /* Couleur associée au Barça */
+}
+
+footer .contact-info {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Fin du pied de page */
+
+@media screen and (max-width: 640px){
+  nav .onglets .link, nav h1{
+    display:none;
+  }
+  .cards .card img{
+    width: 300px;
+  }
+  #joueurs {
+    margin-top: 200px;
+  }
+  #compile{
+    margin-top: -130px;
+  }
+}
